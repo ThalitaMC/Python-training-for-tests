@@ -1,3 +1,4 @@
-#Python - training for tests
+#Python
+#training for tests
 
 Solutions to Python problems commonly seen in job testing.
