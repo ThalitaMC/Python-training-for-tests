@@ -62,21 +62,43 @@ print(palindrome)
 import random
 
 #Creating the array
-n = int(input("n:"))
-list_size = n
-missing = random.randint(0,n)
-num_list = list(range(n + 1))
-num_list.pop(missing)
-print(num_list)
-'''
+def createarr():
+    n = int(input("n:"))
+    missing = random.randint(1,n)
+    num_list = list(range(1, n+1))
+    num_list.pop(missing)
+    random.shuffle(num_list)
+    print(num_list)
+    return(num_list,n)
+
 #With a given array:
-num_list = [0, 5, 3, 9, 7, 2, 8, 4, 6]
-list_size= len(num_list)
+def givenarr():
+    num_list = [5, 3, 1, 7, 2, 8, 4, 6]
+    n= len(num_list) + 1
+    return(num_list,n)
 #
-'''
-for i in range(0, list_size):
+num_list,n = givenarr() # createarr() # 
+for i in range(1, n+1):
     if i not in num_list:
         print("x is: ", i)
 '''
+##############-----------------------##############
+##Determine if the sum of two integers is equal to a given value
+##Given an array of integers and a value, determine if there are any two integers in the array whose sum is equal to the given value.
+# Return true if the sum exists, and false if it does not. Consider the following array and its target sums:
+'''
+def checksum(target):
+    check = False
+    numlist = [5,7,1,2,8,4,3]
+    for i in range(0,len(numlist)):
+        for j in range(i+1, len(numlist)):
+            if target == numlist[i]+numlist[j]:
+                check = True
+                print(target, "=", numlist[i], "+", numlist[j])
+    if check == False:
+        print("No two values sum up to", target)
 
-
+checksum(10)
+checksum(19)
+'''
+##############-----------------------##############
