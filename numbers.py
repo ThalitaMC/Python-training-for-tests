@@ -1,3 +1,4 @@
+##############-----------------------##############
 #########Decimal to binary
 '''
 num=int(input("Enter an integer number: "))
@@ -15,6 +16,7 @@ rev=binary(num)
 print(rev)
 print(rev[::-1])
 '''
+##############-----------------------##############
 ####Fibonatti
 '''
 a=0
@@ -26,6 +28,7 @@ for i in range (limit):
     b=c
 print(b)
 '''
+##############-----------------------##############
 ### Armstrong Number
 '''
 number1= input("Write a number to be verified:")
@@ -39,6 +42,7 @@ if number2 == int(number1):
 else:
     print("Not Armstrong!")
  ''' 
+##############-----------------------##############
   ###Leap Year
 '''
 def leapyear(ano):
@@ -50,6 +54,7 @@ def leapyear(ano):
 year = int(input("Type the year:"))
 print(str(year) + str(leapyear(year)) )
 '''
+##############-----------------------##############
 ###Prime numbers in limit
 '''
 def isprime(num):
@@ -67,3 +72,4 @@ if limit >= 2:
 else:
     print("No prime number")
 '''
+##############-----------------------##############
