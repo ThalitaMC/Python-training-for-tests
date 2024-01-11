@@ -1,4 +1,4 @@
-
+##############-----------------------##############
 ####Given a string containing letters and then a number, return an alphabetical list with the total sum of numbers corresponding to each letter
 '''
 import os
@@ -30,6 +30,7 @@ print (o1)
 print (o2)
 print (o3)
 '''
+##############-----------------------##############
 ###Reverse numbers:
 '''
 input
@@ -41,7 +42,8 @@ for i in range (size):
     n2=n2+int(n[i])*(10**(i))
 print(n2)
 ''' 
- ##Palindrome
+##############-----------------------##############
+ ##Palindrome: Is the input a palindrome?
 '''
 string = input("Write a string:")
 size=len(string)
@@ -52,4 +54,29 @@ for i in range (int(size/2)):
         palindrome = False
 print(palindrome)
 '''
+##############-----------------------##############
+##Find the missing number in a given array
+##Given an array of positive numbers ranging from 1 to n, such that all numbers from 1 to n are present except one number x,
+# find x. Assume the input array is unsorted.
+'''
+import random
+
+#Creating the array
+n = int(input("n:"))
+list_size = n
+missing = random.randint(0,n)
+num_list = list(range(n + 1))
+num_list.pop(missing)
+print(num_list)
+'''
+#With a given array:
+num_list = [0, 5, 3, 9, 7, 2, 8, 4, 6]
+list_size= len(num_list)
+#
+'''
+for i in range(0, list_size):
+    if i not in num_list:
+        print("x is: ", i)
+'''
+
 
