@@ -40,6 +40,7 @@ else:
     print("Not Armstrong!")
  ''' 
   ###Leap Year
+'''
 def leapyear(ano):
     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
         result = " is a Leap Year"
@@ -48,3 +49,21 @@ def leapyear(ano):
     return result
 year = int(input("Type the year:"))
 print(str(year) + str(leapyear(year)) )
+'''
+###Prime numbers in limit
+'''
+def isprime(num):
+    for i in range (2, num):
+        if num % i == 0:
+            return (False)
+    return(True)
+
+limit=int(input("Write the limit:"))+1
+
+if limit >= 2:
+    for num in range (2,limit):
+        if isprime(num) == True:
+            print(num)
+else:
+    print("No prime number")
+'''
